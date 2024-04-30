@@ -38,7 +38,22 @@ function D(birthdate1,birthdate2){
     }
     birthdate1="2024-04-20" 
     birthdate2 ="2024-04-30"
-    console.log("DIFFERENCE IN DAYS OF DOB:",D(birthdate1,birthdate2))
+    console.log("DIFFERENCE IN DAYS OF DATES:",D(birthdate1,birthdate2))
+
+function  leapyear(year){
+   if((year%4==0 && year%100==0) || (year%400==0) )
+   {
+    result=(`${year} IS A LEAP YEAR`)
+    console.log(result)
+   }
+   else{
+    result=(`${year} IS NOT A LEAP YEAR`)
+    console.log(result)
+   }
+}
+year=2023
+leapyear(year)
+
     
 
 
